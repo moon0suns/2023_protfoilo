@@ -459,8 +459,8 @@ body::after {
 
 .page02 .content_wrap .btn_wrap {
     position: absolute;
-    top: 205px;
-    left: 140px;
+    top: -82px;
+    left: 60px;
 }
 
 .page02 .content_wrap .btn_wrap ul {
@@ -468,22 +468,54 @@ body::after {
     gap: 8px;
 }
 
-.page02 .content_wrap .btn_wrap .btn {
+.page02 .content_wrap .btn_wrap .btn_w,
+.page02 .content_wrap .btn_wrap .btn_g {
     margin: 50px auto 0 auto;
 }
 
 
-.page02 .content_wrap .btn_wrap .btn a {
+.page02 .content_wrap .btn_wrap .btn_w a,
+.page02 .content_wrap .btn_wrap .btn_g a {
     font-size: 12px;
     background: #fff;
-    border: 1px solid rgba(78, 78, 78, 0.685);
+    border: 1px solid #ddd;
     padding: 12px 35px;
     border-radius: 12px 15px 0 0;
     align-self: flex-start;
 }
 
+.page02 .bg01 .content_wrap .btn_wrap .btn_w a {
+    background: #25d663;
+    color: #fff;
+}
 
-.page02 .content_wrap .btn_wrap .btn a span {
+.page02 .bg02 .content_wrap .btn_wrap .btn_w a {
+    background: #00688f;
+    color: #fff;
+}
+
+.page02 .bg03 .content_wrap .btn_wrap .btn_w a {
+    background: #1f4e7c;
+    color: #fff;
+}
+
+.page02 .bg04 .content_wrap .btn_wrap .btn_w a {
+    background: #52438e;
+    color: #fff;
+}
+
+.page02 .bg05 .content_wrap .btn_wrap .btn_w a {
+    background: rgb(0, 104, 143);
+    color: #fff;
+}
+
+.page02 .bg06 .content_wrap .btn_wrap .btn_w a {
+    background: #e86e25;
+    color: #fff;
+}
+
+.page02 .content_wrap .btn_wrap .btn_w a span,
+.page02 .content_wrap .btn_wrap .btn_g a span {
     display: block;
 }
 
@@ -850,9 +882,7 @@ body::after {
 
 
 
-/* border-radius: 10px;
-background: rgba(255, 255, 255, .3);
-border: 1px solid rgba(0, 0, 0, .2); */
+
 
 /* * {
     outline: 1px solid #ddd;
@@ -865,28 +895,29 @@ border: 1px solid rgba(0, 0, 0, .2); */
     gap: 0;
 }
 
-.page04 .file_wrap>* {
-    flex: 1;
-}
-
-
 .page04 .f_center {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex: 1.5;
+}
+
+.page04 .f_right {
+    flex: 2.5;
 }
 
 .page04 .f_center::before {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 52.5%;
+    top: 13%;
+    left: 81%;
     transform: translate(0, -50%);
 
-    width: 245px;
+    width: 700px;
     height: 1px;
-    background: #15253f8e;
+    background: #15253f27;
 }
 
 
@@ -999,29 +1030,50 @@ border: 1px solid rgba(0, 0, 0, .2); */
     background: rgba(255, 255, 255, .3);
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 10px;
-    padding: 50px 60px;
+    padding: 30px 60px;
     text-align: left;
+}
+
+
+.page04 .f_right::before {
+    content: "";
+    position: absolute;
+    bottom: 32%;
+    right: 50px;
+    transform: translate(0, -50%);
+
+    width: 700px;
+    height: 1px;
+    background: #15253f27;
+}
+
+
+.page04 .f_label strong {
+    position: absolute;
+    top: 220px;
+    right: -38px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #d1180B;
+    text-align: left;
+
+    background: rgba(255, 255, 255, .3);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 50px;
 }
 
 .page04 .f_right .tit {
     margin-bottom: 0px;
 }
 
-.page04 .f_right .f_label strong {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-    display: block;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: right;
-}
 
 .page04 .f_right .tit p {
     font-weight: 900;
     font-size: 64px;
-    text-align: right;
+    text-align: left;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #15253F;
@@ -1029,6 +1081,7 @@ border: 1px solid rgba(0, 0, 0, .2); */
 
 .page04 .f_right .tit p .sm {
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .page04 .f_right .tit p span {
@@ -1039,6 +1092,7 @@ border: 1px solid rgba(0, 0, 0, .2); */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: right;
 }
 
 .page04 .f_right ul>li .txt h3 {
@@ -1077,19 +1131,21 @@ border: 1px solid rgba(0, 0, 0, .2); */
 
 .page04 .img_deco {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
 .page04 .img_deco img {
-    width: 350px;
+    width: 400px;
 }
 
 
-
-
+/* * {
+    outline: 1px solid #ddd;
+}
+ */
 
 
 
